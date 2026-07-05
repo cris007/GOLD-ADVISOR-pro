@@ -1,3 +1,4 @@
+st.sidebar.write("Key loaded:", bool(st.secrets.get("GEMINI_API_KEY", "")))
 """
 Gold AI Advisor - Streamlit app.
 
