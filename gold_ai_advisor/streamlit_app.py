@@ -1,4 +1,3 @@
-st.sidebar.write("Key loaded:", bool(st.secrets.get("GEMINI_API_KEY", "")))
 """
 Gold AI Advisor - Streamlit app.
 
@@ -16,6 +15,7 @@ import streamlit as st
 from core import market_data, technicals, fundamentals, news_scraper, gemini_client, aggregator
 
 st.set_page_config(page_title="Gold AI Advisor", page_icon="🥇", layout="wide")
+st.sidebar.write("Key loaded:", bool(st.secrets.get("GEMINI_API_KEY", "")))
 
 # --- Session state ---
 if "context" not in st.session_state:
